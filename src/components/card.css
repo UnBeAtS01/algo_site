@@ -1,0 +1,116 @@
+.card {
+  height: 260px;
+  width: 260px;
+  position: relative;
+  display: flex;
+  margin: 50px auto 10px 20%;
+  transition: 0.3s ease-in-out;
+}
+
+.imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -10px;
+  left: -20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 0.2);
+  z-index: 2;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 6px;
+}
+.imgBx img {
+  max-height: 100%;
+  border-radius: 4px;
+}
+.card .about {
+  font-family: "Dancing Script", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  position: relative;
+  margin-left: -140px;
+  margin-top: 40px;
+  padding: 10px 15px;
+  min-width: 400px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  background: rgba(107, 255, 233, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(114, 114, 116, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+.card:hover .about {
+  visibility: visible;
+  opacity: 1;
+  margin-left: -40px;
+  transition-delay: 0.3s;
+}
+.card:hover .imgBx {
+  margin-left: -30px;
+  cursor: pointer;
+}
+.tag {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 50%;
+  height: 40px;
+  z-index: 5;
+  background-color: #6bffe9;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  border: 2px solid #5dffff;
+
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #6bffe9;
+  margin-top: 10px;
+}
+
+.button a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+}
+
+.button a:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover a {
+  padding-right: 25px;
+}
+
+.button:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+.button:hover {
+  background-color: #6bffe9;
+}
